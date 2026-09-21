@@ -52,6 +52,9 @@
   .p-rej{background:rgba(231,76,60,.14);color:var(--red)}
   .insight{background:rgba(46,204,113,.08);border:1px solid rgba(46,204,113,.3);border-radius:10px;padding:16px 20px;margin-top:20px;font-size:14.5px;color:#CFEAD8}
   .insight b{color:var(--green)}
+  .rd{font-size:12px;color:var(--gray);line-height:1.45;margin-top:5px}
+  .cap{font-size:12px;font-family:var(--mono);text-transform:uppercase;letter-spacing:.5px;margin-bottom:8px}
+  .note{font-size:12.5px;color:var(--gray);margin-top:10px;font-family:var(--mono)}
   footer{color:var(--gray);font-size:12px;text-align:center;margin-top:28px;font-family:var(--mono);line-height:1.7}
   @media(max-width:820px){.kpis{grid-template-columns:repeat(2,1fr)}.cols{grid-template-columns:1fr}}
 </style>
@@ -61,14 +64,14 @@
   <div>
     <div class="tag">Clube F · Validação de Vínculo</div>
     <h1>Casos de <span>Validação Manual</span></h1>
-    <div class="sub">A ação do dia 13 (ASBAC Brasília) e a visão consolidada do histórico</div>
+    <div class="sub">A ação do dia 13 (ASBAC Brasília) e a visão consolidada do histórico · 16 de setembro de 2026</div>
   </div>
   <div class="badge">Coordenação de TI</div>
 </div></header>
 
 <div class="wrap">
   <div class="lead">
-    Quando o sistema não reconhece o vínculo do usuário automaticamente (por e-mail ou CPF), o caso segue para a validação manual. <b>A grande maioria desses casos era de vínculo legítimo, apenas não reconhecido de imediato:</b> 93% foram liberados após a conferência. O fluxo manual funcionou como uma rede de segurança, não deixou nenhum elegível de fora.
+    A validação de vínculo é automática em dois níveis: primeiro pelo e-mail, depois pelo CPF, ambos consultados no SISFenasbac e nas bases das ASBACs. Quando o usuário não é reconhecido por nenhum dos dois, o caso segue para a validação manual, onde o vínculo é confirmado por consulta ao SISFenasbac ou por contato direto com a regional. <b>A grande maioria desses casos era de vínculo legítimo, apenas não reconhecido de imediato:</b> 93% foram liberados após a conferência. O fluxo manual funcionou como uma rede de segurança, não deixou nenhum elegível de fora.
   </div>
 
   <h2>A ação do dia 13 — ASBAC Brasília (evento presencial)</h2>
@@ -105,15 +108,15 @@
 
   <h2>Quem eram esses casos — por tipo de vínculo</h2>
   <div class="card">
-    <div class="bar-row"><div class="bar-top"><span class="nm">Associado ASBAC (muitos sócios contribuintes)</span><span class="vl">46 · 49%</span></div><div class="track"><div class="fill" style="width:49%;background:var(--cyan)">46</div></div></div>
-    <div class="bar-row"><div class="bar-top"><span class="nm">Outros (conveniado, analista familiar, agregado)</span><span class="vl">21 · 22%</span></div><div class="track"><div class="fill" style="width:22%;background:#00b3d6">21</div></div></div>
-    <div class="bar-row"><div class="bar-top"><span class="nm">Servidor BACEN</span><span class="vl">11 · 12%</span></div><div class="track"><div class="fill" style="width:12%;background:#3A6EA5">11</div></div></div>
-    <div class="bar-row"><div class="bar-top"><span class="nm">Dependente de associado</span><span class="vl">10 · 11%</span></div><div class="track"><div class="fill" style="width:11%;background:#3A6EA5">10</div></div></div>
-    <div class="bar-row"><div class="bar-top"><span class="nm">Funcionário ASBAC</span><span class="vl">6 · 6%</span></div><div class="track"><div class="fill" style="width:6%;background:#5A6A8A">6</div></div></div>
+    <div class="bar-row"><div class="bar-top"><span class="nm">Associado ASBAC</span><span class="vl">46 · 49%</span></div><div class="track"><div class="fill" style="width:49%;background:var(--cyan)">46</div></div><div class="rd">Associados (muitos sócios contribuintes) não localizados de imediato nas bases.</div></div>
+    <div class="bar-row"><div class="bar-top"><span class="nm">Outros</span><span class="vl">21 · 22%</span></div><div class="track"><div class="fill" style="width:22%;background:#00b3d6">21</div></div><div class="rd">Conveniados, analistas familiares e agregados: vínculos válidos, fora da base principal.</div></div>
+    <div class="bar-row"><div class="bar-top"><span class="nm">Servidor BACEN</span><span class="vl">11 · 12%</span></div><div class="track"><div class="fill" style="width:12%;background:#3A6EA5">11</div></div><div class="rd">Servidores do BC confirmados — cada um é um associado potencial conquistado.</div></div>
+    <div class="bar-row"><div class="bar-top"><span class="nm">Dependente de associado</span><span class="vl">10 · 11%</span></div><div class="track"><div class="fill" style="width:11%;background:#3A6EA5">10</div></div><div class="rd">Dependentes (esposas, filhos), fora da regra automática atual.</div></div>
+    <div class="bar-row"><div class="bar-top"><span class="nm">Funcionário ASBAC</span><span class="vl">6 · 6%</span></div><div class="track"><div class="fill" style="width:6%;background:#5A6A8A">6</div></div><div class="rd">Funcionários das regionais confirmados por contato.</div></div>
   </div>
 
   <div class="insight" style="margin-top:22px">
-    <b>O que de fato pegou:</b> não foi falha do sistema. A maioria são associados legítimos (em especial sócios contribuintes) que não constavam nas planilhas das ASBACs, ou constavam com dados divergentes (e-mail ou CPF diferente do informado). A barreira foi a inconsistência do dado na origem, o que reforça a necessidade da qualidade das bases regionais (projeto Conecta).
+    <b>O que de fato pegou:</b> não foi falha do sistema, foi a qualidade do dado na origem. A maioria são associados legítimos (em especial sócios contribuintes) que não constavam nas planilhas compartilhadas pelas ASBACs, ou constavam com dados divergentes (e-mail ou CPF diferente do informado). O sistema funcionou como projetado: quem ele não reconheceu, mandou para conferência humana — e a conferência confirmou o vínculo na grande maioria. Mesmo após a carga cuidadosa, uma base consolidada de várias origens ainda tem lacunas e divergências: um associado enviou o CPF correto, mas o registro no SISFenasbac estava com outro CPF e foi preciso corrigir. É isso que reforça a frente de qualidade das bases regionais (projeto Conecta).
   </div>
 
   <h2>Distribuição por regional</h2>
@@ -129,28 +132,39 @@
       <tr><td>Belém / Recife</td><td class="n">2</td><td class="n"><span class="pill p-ok">2</span></td><td class="n">0</td><td class="n">0</td></tr>
     </table>
   </div>
-  <div style="font-size:12.5px;color:var(--gray);margin-top:10px;font-family:var(--mono)">Brasília concentra a maior parte — o evento presencial foi lá. 49 dos 51 casos já liberados.</div>
+  <div class="note">Brasília concentra a maior parte — o evento presencial foi lá. 49 dos 51 casos já liberados.</div>
+  <div class="card" style="border-left:3px solid var(--blue);margin-top:14px;">
+    <div class="cap" style="color:#7A9BFF">Ponto estrutural de uma regional</div>
+    <div style="font-size:14px;color:#D3DBEA;line-height:1.6;">A ASBAC do Rio de Janeiro informou que o sistema que ela usa não permite busca por CPF, apenas por nome, o que dificulta a confirmação de vínculo.</div>
+  </div>
 
   <h2>Como o vínculo foi confirmado</h2>
   <div class="cols">
     <div class="card">
       <div style="font-size:13px;color:#C4CDDE;margin-bottom:12px">Vias de confirmação</div>
-      <div class="bar-row"><div class="bar-top"><span class="nm">Contato com a ASBAC (e-mail / telefone)</span><span class="vl">maioria</span></div><div class="track"><div class="fill" style="width:70%;background:var(--cyan)"> </div></div></div>
-      <div class="bar-row"><div class="bar-top"><span class="nm">SISFenasbac (registro pré-existente)</span><span class="vl">rápida</span></div><div class="track"><div class="fill" style="width:30%;background:#3A6EA5"> </div></div></div>
-      <div style="font-size:12.5px;color:var(--gray);margin-top:8px">Casos com registro no SISFenasbac resolvem rápido. O gargalo são os que dependem de retorno da regional.</div>
+      <div style="font-size:13.5px;color:#D3DBEA;line-height:1.8">
+        › <b>Consulta ao SISFenasbac</b> — quando já existe registro, o caso resolve rápido.<br>
+        › <b>Contato direto com a regional</b> — e-mail ou telefone para a ASBAC.
+      </div>
+      <div class="note">O gargalo está na segunda via: depende do retorno da regional.</div>
     </div>
     <div class="card">
       <div style="font-size:13px;color:#C4CDDE;margin-bottom:12px">Próximos passos</div>
       <div style="font-size:13.5px;color:#D3DBEA;line-height:1.7">
-        › Definir prazo-alvo de retorno e ponto focal por ASBAC<br>
-        › Melhorar as bases regionais (Conecta) para reduzir a análise manual<br>
-        › Avaliar a incorporação dos dependentes na regra de negócio (PEN)
+        › Definir com as regionais prazo-alvo de retorno e ponto focal por ASBAC<br>
+        › Melhorar a qualidade das bases regionais (Conecta) para reduzir a análise manual<br>
+        › Levar à PEN a incorporação dos dependentes na regra de negócio
       </div>
     </div>
   </div>
 
+  <h2>Leitura final</h2>
+  <div class="insight" style="margin-top:0">
+    <b>O resultado é positivo:</b> 93% dos casos manuais eram vínculos legítimos e foram liberados. O fluxo de exceção funcionou como uma rede de segurança e não deixou ninguém elegível de fora. Cada servidor do BC que passou pela análise e foi confirmado é um associado conquistado, não uma perda. O que reduz o volume de análise manual no futuro é a qualidade das bases das regionais — exatamente o que o projeto Conecta endereça: quanto mais completa e consistente a base de cada ASBAC, menos casos caem na conferência.
+  </div>
+
   <footer>
-    Dados apurados do registro de solicitações do Clube F (fluxo de exceção / análise manual) · números agregados, sem dados pessoais · Coordenação de TI · Fenasbac
+    Base: relatório «Clube F — Casos de validação manual», Coordenação de TI, 16/09/2026 · dados apurados do registro de solicitações do Clube F (fluxo de exceção / análise manual) · números agregados, sem dados pessoais · Fenasbac
   </footer>
 </div>
 </body>
