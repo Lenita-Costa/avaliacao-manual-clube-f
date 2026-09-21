@@ -29,8 +29,9 @@ O painel traz dois recortes:
 | Visão 1 — ação do dia 13 em diante · ASBAC Brasília | 46 | 44 (96%) | 0 | 2 |
 | Visão 2 — consolidado, 02/07 a 21/09/2026 | 94 | 87 (93%) | 3 | 4 |
 
-Cada recorte abre em motivo da decisão, via de confirmação e tipo de vínculo.
-O painel traz ainda a distribuição por regional e a leitura final.
+A visão do evento abre em quem eram esses cadastros e traz a análise do que
+de fato aconteceu; a visão consolidada fica no panorama — tipo de vínculo,
+distribuição por regional e leitura final.
 
 **Leitura:** a barreira não foi falha do sistema. Sócio contribuinte é o maior
 motivo isolado — 31 dos 94 casos (33%), e 20 dos 46 do evento (43%). Os 31
