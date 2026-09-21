@@ -15,26 +15,37 @@ Publicado via GitHub Pages:
 ```
 index.html   painel de validação manual (publicado no Pages)
 .nojekyll    desliga o Jekyll no Pages, serve o HTML como está
+.gitignore   mantém o relatório .docx de origem fora do repositório público
 ```
 
 ## O que o painel mostra
 
-Quando o sistema não reconhece o vínculo do usuário automaticamente (por e-mail
-ou CPF), o caso segue para validação manual.
+Quando o sistema não reconhece o vínculo do usuário automaticamente (primeiro
+por e-mail, depois por CPF, nas duas bases), o caso segue para validação manual.
+O painel traz dois recortes:
 
 | Recorte | Casos | Liberados | Rejeitados | Pendentes |
 |---|---|---|---|---|
-| Ação do dia 13 — ASBAC Brasília | 46 | 44 (96%) | 0 | 2 |
-| Histórico consolidado | 94 | 87 (93%) | 3 | 4 |
+| Visão 1 — ação do dia 13 em diante · ASBAC Brasília | 46 | 44 (96%) | 0 | 2 |
+| Visão 2 — consolidado, 02/07 a 21/09/2026 | 94 | 87 (93%) | 3 | 4 |
 
-O painel abre ainda o perfil dos cadastros por tipo de vínculo, a distribuição
-por regional e as vias de confirmação do vínculo.
+Cada recorte abre em motivo da decisão, via de confirmação e tipo de vínculo.
+O painel traz ainda a distribuição por regional e a leitura final.
 
-**Leitura:** a barreira não foi falha do sistema. A maioria são associados
-legítimos — em especial sócios contribuintes — que não constavam nas planilhas
-das ASBACs ou constavam com dados divergentes. A inconsistência do dado na
-origem é o que reforça a frente de qualidade das bases regionais (projeto
-Conecta). Os pendentes dependem do retorno da própria pessoa, não da TI.
+**Leitura:** a barreira não foi falha do sistema. Sócio contribuinte é o maior
+motivo isolado — 31 dos 94 casos (33%), e 20 dos 46 do evento (43%). Os 31
+foram confirmados pela mesma via, sem exceção: contato direto com a regional.
+Nenhum saiu por consulta às bases, o que indica que a categoria não veio na
+carga da integração. Some-se a isso a divergência de dado na origem (e-mail ou
+CPF diferente do informado), e está explicado o volume da análise manual. Os
+pendentes dependem do retorno da própria pessoa, não da TI.
+
+## Fonte dos números
+
+Aba `Casos` da planilha *Liberação de Acesso* (registro de solicitações do
+Clube F). Os totais do painel conferem com as abas `Resumo` e `Acompanhamento
+por ASBAC` da própria planilha. O recorte do evento é definido como casos da
+ASBAC Brasília com data de contato a partir de 13/09/2026.
 
 ## Como atualizar
 
